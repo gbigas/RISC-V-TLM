@@ -1,0 +1,116 @@
+[
+{
+  "directory": "/home/dmoney/ACA_Project/RISC-V-TLM/build",
+  "command": "/usr/bin/g++ -DSPDLOG_COMPILED_LIB -I/home/dmoney/ACA_Project/RISC-V-TLM/./inc -isystem /home/dmoney/systemc-2.3.3/src -isystem /home/dmoney/ACA_Project/RISC-V-TLM/spdlog/install/include -O3 -DNDEBUG -std=c++17 -O3 -g -Wall -Wextra -Wunused-function -Wpedantic -o CMakeFiles/RISCV_TLM.dir/src/A_extension.cpp.o -c /home/dmoney/ACA_Project/RISC-V-TLM/src/A_extension.cpp",
+  "file": "/home/dmoney/ACA_Project/RISC-V-TLM/src/A_extension.cpp",
+  "output": "CMakeFiles/RISCV_TLM.dir/src/A_extension.cpp.o"
+},
+{
+  "directory": "/home/dmoney/ACA_Project/RISC-V-TLM/build",
+  "command": "/usr/bin/g++ -DSPDLOG_COMPILED_LIB -I/home/dmoney/ACA_Project/RISC-V-TLM/./inc -isystem /home/dmoney/systemc-2.3.3/src -isystem /home/dmoney/ACA_Project/RISC-V-TLM/spdlog/install/include -O3 -DNDEBUG -std=c++17 -O3 -g -Wall -Wextra -Wunused-function -Wpedantic -o CMakeFiles/RISCV_TLM.dir/src/BASE_ISA.cpp.o -c /home/dmoney/ACA_Project/RISC-V-TLM/src/BASE_ISA.cpp",
+  "file": "/home/dmoney/ACA_Project/RISC-V-TLM/src/BASE_ISA.cpp",
+  "output": "CMakeFiles/RISCV_TLM.dir/src/BASE_ISA.cpp.o"
+},
+{
+  "directory": "/home/dmoney/ACA_Project/RISC-V-TLM/build",
+  "command": "/usr/bin/g++ -DSPDLOG_COMPILED_LIB -I/home/dmoney/ACA_Project/RISC-V-TLM/./inc -isystem /home/dmoney/systemc-2.3.3/src -isystem /home/dmoney/ACA_Project/RISC-V-TLM/spdlog/install/include -O3 -DNDEBUG -std=c++17 -O3 -g -Wall -Wextra -Wunused-function -Wpedantic -o CMakeFiles/RISCV_TLM.dir/src/BusCtrl.cpp.o -c /home/dmoney/ACA_Project/RISC-V-TLM/src/BusCtrl.cpp",
+  "file": "/home/dmoney/ACA_Project/RISC-V-TLM/src/BusCtrl.cpp",
+  "output": "CMakeFiles/RISCV_TLM.dir/src/BusCtrl.cpp.o"
+},
+{
+  "directory": "/home/dmoney/ACA_Project/RISC-V-TLM/build",
+  "command": "/usr/bin/g++ -DSPDLOG_COMPILED_LIB -I/home/dmoney/ACA_Project/RISC-V-TLM/./inc -isystem /home/dmoney/systemc-2.3.3/src -isystem /home/dmoney/ACA_Project/RISC-V-TLM/spdlog/install/include -O3 -DNDEBUG -std=c++17 -O3 -g -Wall -Wextra -Wunused-function -Wpedantic -o CMakeFiles/RISCV_TLM.dir/src/CPU.cpp.o -c /home/dmoney/ACA_Project/RISC-V-TLM/src/CPU.cpp",
+  "file": "/home/dmoney/ACA_Project/RISC-V-TLM/src/CPU.cpp",
+  "output": "CMakeFiles/RISCV_TLM.dir/src/CPU.cpp.o"
+},
+{
+  "directory": "/home/dmoney/ACA_Project/RISC-V-TLM/build",
+  "command": "/usr/bin/g++ -DSPDLOG_COMPILED_LIB -I/home/dmoney/ACA_Project/RISC-V-TLM/./inc -isystem /home/dmoney/systemc-2.3.3/src -isystem /home/dmoney/ACA_Project/RISC-V-TLM/spdlog/install/include -O3 -DNDEBUG -std=c++17 -O3 -g -Wall -Wextra -Wunused-function -Wpedantic -o CMakeFiles/RISCV_TLM.dir/src/C_extension.cpp.o -c /home/dmoney/ACA_Project/RISC-V-TLM/src/C_extension.cpp",
+  "file": "/home/dmoney/ACA_Project/RISC-V-TLM/src/C_extension.cpp",
+  "output": "CMakeFiles/RISCV_TLM.dir/src/C_extension.cpp.o"
+},
+{
+  "directory": "/home/dmoney/ACA_Project/RISC-V-TLM/build",
+  "command": "/usr/bin/g++ -DSPDLOG_COMPILED_LIB -I/home/dmoney/ACA_Project/RISC-V-TLM/./inc -isystem /home/dmoney/systemc-2.3.3/src -isystem /home/dmoney/ACA_Project/RISC-V-TLM/spdlog/install/include -O3 -DNDEBUG -std=c++17 -O3 -g -Wall -Wextra -Wunused-function -Wpedantic -o CMakeFiles/RISCV_TLM.dir/src/Debug.cpp.o -c /home/dmoney/ACA_Project/RISC-V-TLM/src/Debug.cpp",
+  "file": "/home/dmoney/ACA_Project/RISC-V-TLM/src/Debug.cpp",
+  "output": "CMakeFiles/RISCV_TLM.dir/src/Debug.cpp.o"
+},
+{
+  "directory": "/home/dmoney/ACA_Project/RISC-V-TLM/build",
+  "command": "/usr/bin/g++ -DSPDLOG_COMPILED_LIB -I/home/dmoney/ACA_Project/RISC-V-TLM/./inc -isystem /home/dmoney/systemc-2.3.3/src -isystem /home/dmoney/ACA_Project/RISC-V-TLM/spdlog/install/include -O3 -DNDEBUG -std=c++17 -O3 -g -Wall -Wextra -Wunused-function -Wpedantic -o CMakeFiles/RISCV_TLM.dir/src/F_extension.cpp.o -c /home/dmoney/ACA_Project/RISC-V-TLM/src/F_extension.cpp",
+  "file": "/home/dmoney/ACA_Project/RISC-V-TLM/src/F_extension.cpp",
+  "output": "CMakeFiles/RISCV_TLM.dir/src/F_extension.cpp.o"
+},
+{
+  "directory": "/home/dmoney/ACA_Project/RISC-V-TLM/build",
+  "command": "/usr/bin/g++ -DSPDLOG_COMPILED_LIB -I/home/dmoney/ACA_Project/RISC-V-TLM/./inc -isystem /home/dmoney/systemc-2.3.3/src -isystem /home/dmoney/ACA_Project/RISC-V-TLM/spdlog/install/include -O3 -DNDEBUG -std=c++17 -O3 -g -Wall -Wextra -Wunused-function -Wpedantic -o CMakeFiles/RISCV_TLM.dir/src/Instruction.cpp.o -c /home/dmoney/ACA_Project/RISC-V-TLM/src/Instruction.cpp",
+  "file": "/home/dmoney/ACA_Project/RISC-V-TLM/src/Instruction.cpp",
+  "output": "CMakeFiles/RISCV_TLM.dir/src/Instruction.cpp.o"
+},
+{
+  "directory": "/home/dmoney/ACA_Project/RISC-V-TLM/build",
+  "command": "/usr/bin/g++ -DSPDLOG_COMPILED_LIB -I/home/dmoney/ACA_Project/RISC-V-TLM/./inc -isystem /home/dmoney/systemc-2.3.3/src -isystem /home/dmoney/ACA_Project/RISC-V-TLM/spdlog/install/include -O3 -DNDEBUG -std=c++17 -O3 -g -Wall -Wextra -Wunused-function -Wpedantic -o CMakeFiles/RISCV_TLM.dir/src/M_extension.cpp.o -c /home/dmoney/ACA_Project/RISC-V-TLM/src/M_extension.cpp",
+  "file": "/home/dmoney/ACA_Project/RISC-V-TLM/src/M_extension.cpp",
+  "output": "CMakeFiles/RISCV_TLM.dir/src/M_extension.cpp.o"
+},
+{
+  "directory": "/home/dmoney/ACA_Project/RISC-V-TLM/build",
+  "command": "/usr/bin/g++ -DSPDLOG_COMPILED_LIB -I/home/dmoney/ACA_Project/RISC-V-TLM/./inc -isystem /home/dmoney/systemc-2.3.3/src -isystem /home/dmoney/ACA_Project/RISC-V-TLM/spdlog/install/include -O3 -DNDEBUG -std=c++17 -O3 -g -Wall -Wextra -Wunused-function -Wpedantic -o CMakeFiles/RISCV_TLM.dir/src/Memory.cpp.o -c /home/dmoney/ACA_Project/RISC-V-TLM/src/Memory.cpp",
+  "file": "/home/dmoney/ACA_Project/RISC-V-TLM/src/Memory.cpp",
+  "output": "CMakeFiles/RISCV_TLM.dir/src/Memory.cpp.o"
+},
+{
+  "directory": "/home/dmoney/ACA_Project/RISC-V-TLM/build",
+  "command": "/usr/bin/g++ -DSPDLOG_COMPILED_LIB -I/home/dmoney/ACA_Project/RISC-V-TLM/./inc -isystem /home/dmoney/systemc-2.3.3/src -isystem /home/dmoney/ACA_Project/RISC-V-TLM/spdlog/install/include -O3 -DNDEBUG -std=c++17 -O3 -g -Wall -Wextra -Wunused-function -Wpedantic -o CMakeFiles/RISCV_TLM.dir/src/MemoryInterface.cpp.o -c /home/dmoney/ACA_Project/RISC-V-TLM/src/MemoryInterface.cpp",
+  "file": "/home/dmoney/ACA_Project/RISC-V-TLM/src/MemoryInterface.cpp",
+  "output": "CMakeFiles/RISCV_TLM.dir/src/MemoryInterface.cpp.o"
+},
+{
+  "directory": "/home/dmoney/ACA_Project/RISC-V-TLM/build",
+  "command": "/usr/bin/g++ -DSPDLOG_COMPILED_LIB -I/home/dmoney/ACA_Project/RISC-V-TLM/./inc -isystem /home/dmoney/systemc-2.3.3/src -isystem /home/dmoney/ACA_Project/RISC-V-TLM/spdlog/install/include -O3 -DNDEBUG -std=c++17 -O3 -g -Wall -Wextra -Wunused-function -Wpedantic -o CMakeFiles/RISCV_TLM.dir/src/Performance.cpp.o -c /home/dmoney/ACA_Project/RISC-V-TLM/src/Performance.cpp",
+  "file": "/home/dmoney/ACA_Project/RISC-V-TLM/src/Performance.cpp",
+  "output": "CMakeFiles/RISCV_TLM.dir/src/Performance.cpp.o"
+},
+{
+  "directory": "/home/dmoney/ACA_Project/RISC-V-TLM/build",
+  "command": "/usr/bin/g++ -DSPDLOG_COMPILED_LIB -I/home/dmoney/ACA_Project/RISC-V-TLM/./inc -isystem /home/dmoney/systemc-2.3.3/src -isystem /home/dmoney/ACA_Project/RISC-V-TLM/spdlog/install/include -O3 -DNDEBUG -std=c++17 -O3 -g -Wall -Wextra -Wunused-function -Wpedantic -o CMakeFiles/RISCV_TLM.dir/src/RV32.cpp.o -c /home/dmoney/ACA_Project/RISC-V-TLM/src/RV32.cpp",
+  "file": "/home/dmoney/ACA_Project/RISC-V-TLM/src/RV32.cpp",
+  "output": "CMakeFiles/RISCV_TLM.dir/src/RV32.cpp.o"
+},
+{
+  "directory": "/home/dmoney/ACA_Project/RISC-V-TLM/build",
+  "command": "/usr/bin/g++ -DSPDLOG_COMPILED_LIB -I/home/dmoney/ACA_Project/RISC-V-TLM/./inc -isystem /home/dmoney/systemc-2.3.3/src -isystem /home/dmoney/ACA_Project/RISC-V-TLM/spdlog/install/include -O3 -DNDEBUG -std=c++17 -O3 -g -Wall -Wextra -Wunused-function -Wpedantic -o CMakeFiles/RISCV_TLM.dir/src/RV64.cpp.o -c /home/dmoney/ACA_Project/RISC-V-TLM/src/RV64.cpp",
+  "file": "/home/dmoney/ACA_Project/RISC-V-TLM/src/RV64.cpp",
+  "output": "CMakeFiles/RISCV_TLM.dir/src/RV64.cpp.o"
+},
+{
+  "directory": "/home/dmoney/ACA_Project/RISC-V-TLM/build",
+  "command": "/usr/bin/g++ -DSPDLOG_COMPILED_LIB -I/home/dmoney/ACA_Project/RISC-V-TLM/./inc -isystem /home/dmoney/systemc-2.3.3/src -isystem /home/dmoney/ACA_Project/RISC-V-TLM/spdlog/install/include -O3 -DNDEBUG -std=c++17 -O3 -g -Wall -Wextra -Wunused-function -Wpedantic -o CMakeFiles/RISCV_TLM.dir/src/Registers.cpp.o -c /home/dmoney/ACA_Project/RISC-V-TLM/src/Registers.cpp",
+  "file": "/home/dmoney/ACA_Project/RISC-V-TLM/src/Registers.cpp",
+  "output": "CMakeFiles/RISCV_TLM.dir/src/Registers.cpp.o"
+},
+{
+  "directory": "/home/dmoney/ACA_Project/RISC-V-TLM/build",
+  "command": "/usr/bin/g++ -DSPDLOG_COMPILED_LIB -I/home/dmoney/ACA_Project/RISC-V-TLM/./inc -isystem /home/dmoney/systemc-2.3.3/src -isystem /home/dmoney/ACA_Project/RISC-V-TLM/spdlog/install/include -O3 -DNDEBUG -std=c++17 -O3 -g -Wall -Wextra -Wunused-function -Wpedantic -o CMakeFiles/RISCV_TLM.dir/src/Simulator.cpp.o -c /home/dmoney/ACA_Project/RISC-V-TLM/src/Simulator.cpp",
+  "file": "/home/dmoney/ACA_Project/RISC-V-TLM/src/Simulator.cpp",
+  "output": "CMakeFiles/RISCV_TLM.dir/src/Simulator.cpp.o"
+},
+{
+  "directory": "/home/dmoney/ACA_Project/RISC-V-TLM/build",
+  "command": "/usr/bin/g++ -DSPDLOG_COMPILED_LIB -I/home/dmoney/ACA_Project/RISC-V-TLM/./inc -isystem /home/dmoney/systemc-2.3.3/src -isystem /home/dmoney/ACA_Project/RISC-V-TLM/spdlog/install/include -O3 -DNDEBUG -std=c++17 -O3 -g -Wall -Wextra -Wunused-function -Wpedantic -o CMakeFiles/RISCV_TLM.dir/src/Timer.cpp.o -c /home/dmoney/ACA_Project/RISC-V-TLM/src/Timer.cpp",
+  "file": "/home/dmoney/ACA_Project/RISC-V-TLM/src/Timer.cpp",
+  "output": "CMakeFiles/RISCV_TLM.dir/src/Timer.cpp.o"
+},
+{
+  "directory": "/home/dmoney/ACA_Project/RISC-V-TLM/build",
+  "command": "/usr/bin/g++ -DSPDLOG_COMPILED_LIB -I/home/dmoney/ACA_Project/RISC-V-TLM/./inc -isystem /home/dmoney/systemc-2.3.3/src -isystem /home/dmoney/ACA_Project/RISC-V-TLM/spdlog/install/include -O3 -DNDEBUG -std=c++17 -O3 -g -Wall -Wextra -Wunused-function -Wpedantic -o CMakeFiles/RISCV_TLM.dir/src/Trace.cpp.o -c /home/dmoney/ACA_Project/RISC-V-TLM/src/Trace.cpp",
+  "file": "/home/dmoney/ACA_Project/RISC-V-TLM/src/Trace.cpp",
+  "output": "CMakeFiles/RISCV_TLM.dir/src/Trace.cpp.o"
+},
+{
+  "directory": "/home/dmoney/ACA_Project/RISC-V-TLM/build",
+  "command": "/usr/bin/g++ -DSPDLOG_COMPILED_LIB -I/home/dmoney/ACA_Project/RISC-V-TLM/./inc -isystem /home/dmoney/systemc-2.3.3/src -isystem /home/dmoney/ACA_Project/RISC-V-TLM/spdlog/install/include -O3 -DNDEBUG -std=c++17 -O3 -g -Wall -Wextra -Wunused-function -Wpedantic -o CMakeFiles/RISCV_TLM.dir/src/extension_base.cpp.o -c /home/dmoney/ACA_Project/RISC-V-TLM/src/extension_base.cpp",
+  "file": "/home/dmoney/ACA_Project/RISC-V-TLM/src/extension_base.cpp",
+  "output": "CMakeFiles/RISCV_TLM.dir/src/extension_base.cpp.o"
+}
+]
