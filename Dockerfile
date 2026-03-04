@@ -50,4 +50,10 @@ RUN cd /usr/src/riscv64 \
  && SPDLOG_HOME=$PWD/../spdlog/install cmake -DCMAKE_BUILD_TYPE=Release .. \
  && make
 
+#Get gnu compiler
+RUN curl --insecure -L -o "riscv32-elf-ubuntu-22.04-gcc.tar.xz" "https://github.com/riscv-collab/riscv-gnu-toolchain/releases/download/2026.02.13/riscv32-elf-ubuntu-22.04-gcc.tar.xz" \
+ && tar -xvf "riscv32-elf-ubuntu-22.04-gcc.tar.xz" \
+ &&mkdir ~/.local \
+ &&mv ./riscv/bin/ ~/.local/bin/
+
 WORKDIR /usr/src/riscv64
