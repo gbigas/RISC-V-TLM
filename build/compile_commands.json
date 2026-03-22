@@ -109,6 +109,12 @@
 },
 {
   "directory": "/home/dmoney/ACA_Project/RISC-V-TLM/build",
+  "command": "/usr/bin/g++ -DSPDLOG_COMPILED_LIB -I/home/dmoney/ACA_Project/RISC-V-TLM/./inc -isystem /home/dmoney/systemc-2.3.3/src -isystem /home/dmoney/ACA_Project/RISC-V-TLM/spdlog/install/include -O3 -DNDEBUG -std=c++17 -O3 -g -Wall -Wextra -Wunused-function -Wpedantic -o CMakeFiles/RISCV_TLM.dir/src/UART.cpp.o -c /home/dmoney/ACA_Project/RISC-V-TLM/src/UART.cpp",
+  "file": "/home/dmoney/ACA_Project/RISC-V-TLM/src/UART.cpp",
+  "output": "CMakeFiles/RISCV_TLM.dir/src/UART.cpp.o"
+},
+{
+  "directory": "/home/dmoney/ACA_Project/RISC-V-TLM/build",
   "command": "/usr/bin/g++ -DSPDLOG_COMPILED_LIB -I/home/dmoney/ACA_Project/RISC-V-TLM/./inc -isystem /home/dmoney/systemc-2.3.3/src -isystem /home/dmoney/ACA_Project/RISC-V-TLM/spdlog/install/include -O3 -DNDEBUG -std=c++17 -O3 -g -Wall -Wextra -Wunused-function -Wpedantic -o CMakeFiles/RISCV_TLM.dir/src/extension_base.cpp.o -c /home/dmoney/ACA_Project/RISC-V-TLM/src/extension_base.cpp",
   "file": "/home/dmoney/ACA_Project/RISC-V-TLM/src/extension_base.cpp",
   "output": "CMakeFiles/RISCV_TLM.dir/src/extension_base.cpp.o"

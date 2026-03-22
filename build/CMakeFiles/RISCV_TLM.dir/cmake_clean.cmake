@@ -35,6 +35,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/RISCV_TLM.dir/src/Timer.cpp.o.d"
   "CMakeFiles/RISCV_TLM.dir/src/Trace.cpp.o"
   "CMakeFiles/RISCV_TLM.dir/src/Trace.cpp.o.d"
+  "CMakeFiles/RISCV_TLM.dir/src/UART.cpp.o"
+  "CMakeFiles/RISCV_TLM.dir/src/UART.cpp.o.d"
   "CMakeFiles/RISCV_TLM.dir/src/extension_base.cpp.o"
   "CMakeFiles/RISCV_TLM.dir/src/extension_base.cpp.o.d"
   "RISCV_TLM"

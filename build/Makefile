@@ -561,6 +561,30 @@ src/Trace.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RISCV_TLM.dir/build.make CMakeFiles/RISCV_TLM.dir/src/Trace.cpp.s
 .PHONY : src/Trace.cpp.s
 
+src/UART.o: src/UART.cpp.o
+.PHONY : src/UART.o
+
+# target to build an object file
+src/UART.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RISCV_TLM.dir/build.make CMakeFiles/RISCV_TLM.dir/src/UART.cpp.o
+.PHONY : src/UART.cpp.o
+
+src/UART.i: src/UART.cpp.i
+.PHONY : src/UART.i
+
+# target to preprocess a source file
+src/UART.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RISCV_TLM.dir/build.make CMakeFiles/RISCV_TLM.dir/src/UART.cpp.i
+.PHONY : src/UART.cpp.i
+
+src/UART.s: src/UART.cpp.s
+.PHONY : src/UART.s
+
+# target to generate assembly for a file
+src/UART.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RISCV_TLM.dir/build.make CMakeFiles/RISCV_TLM.dir/src/UART.cpp.s
+.PHONY : src/UART.cpp.s
+
 src/extension_base.o: src/extension_base.cpp.o
 .PHONY : src/extension_base.o
 
@@ -648,6 +672,9 @@ help:
 	@echo "... src/Trace.o"
 	@echo "... src/Trace.i"
 	@echo "... src/Trace.s"
+	@echo "... src/UART.o"
+	@echo "... src/UART.i"
+	@echo "... src/UART.s"
 	@echo "... src/extension_base.o"
 	@echo "... src/extension_base.i"
 	@echo "... src/extension_base.s"

@@ -27,6 +27,9 @@ namespace riscv_tlm {
  */
 #define TRACE_MEMORY_ADDRESS 0x40000000
 
+#define UART_MEMORY_ADDRESS	 0x50000000
+
+
 #define TIMER_MEMORY_ADDRESS_LO 0x40004000
 #define TIMER_MEMORY_ADDRESS_HI 0x40004004
 #define TIMERCMP_MEMORY_ADDRESS_LO 0x40004008
@@ -64,7 +67,8 @@ namespace riscv_tlm {
          * @brief TLM initiator socket Trace module
          */
         tlm_utils::simple_initiator_socket<BusCtrl> trace_socket;
-
+		
+		tlm_utils::simple_initiator_socket<BusCtrl> uart_socket;
         /**
          * @brief TLM initiator socket Trace module
          */

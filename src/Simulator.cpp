@@ -17,6 +17,7 @@
 #include "CPU.h"
 #include "BusCtrl.h"
 #include "Trace.h"
+#include "UART.h"
 #include "Timer.h"
 #include "Debug.h"
 
@@ -46,6 +47,7 @@ public:
     riscv_tlm::BusCtrl *Bus;
     riscv_tlm::peripherals::Trace *trace;
     riscv_tlm::peripherals::Timer *timer;
+	riscv_tlm::peripherals::UART *uart;
 
 	explicit Simulator(sc_core::sc_module_name const &name, riscv_tlm::cpu_types_t cpu_type_m): sc_module(name) {
 		std::uint32_t start_PC;
@@ -64,12 +66,14 @@ public:
 		Bus = new riscv_tlm::BusCtrl("BusCtrl");
 		trace = new riscv_tlm::peripherals::Trace("Trace");
 		timer = new riscv_tlm::peripherals::Timer("Timer");
+		uart = new riscv_tlm::peripherals::UART("UART");
 
 		cpu->instr_bus.bind(Bus->cpu_instr_socket);
 		cpu->mem_intf->data_bus.bind(Bus->cpu_data_socket);
 
 		Bus->memory_socket.bind(MainMemory->socket);
 		Bus->trace_socket.bind(trace->socket);
+		Bus->uart_socket.bind(uart->socket);
 		Bus->timer_socket.bind(timer->socket);
 
 		timer->irq_line.bind(cpu->irq_line_socket);

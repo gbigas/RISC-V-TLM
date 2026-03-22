@@ -26,6 +26,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/dmoney/ACA_Project/RISC-V-TLM/src/Simulator.cpp" "CMakeFiles/RISCV_TLM.dir/src/Simulator.cpp.o" "gcc" "CMakeFiles/RISCV_TLM.dir/src/Simulator.cpp.o.d"
   "/home/dmoney/ACA_Project/RISC-V-TLM/src/Timer.cpp" "CMakeFiles/RISCV_TLM.dir/src/Timer.cpp.o" "gcc" "CMakeFiles/RISCV_TLM.dir/src/Timer.cpp.o.d"
   "/home/dmoney/ACA_Project/RISC-V-TLM/src/Trace.cpp" "CMakeFiles/RISCV_TLM.dir/src/Trace.cpp.o" "gcc" "CMakeFiles/RISCV_TLM.dir/src/Trace.cpp.o.d"
+  "/home/dmoney/ACA_Project/RISC-V-TLM/src/UART.cpp" "CMakeFiles/RISCV_TLM.dir/src/UART.cpp.o" "gcc" "CMakeFiles/RISCV_TLM.dir/src/UART.cpp.o.d"
   "/home/dmoney/ACA_Project/RISC-V-TLM/src/extension_base.cpp" "CMakeFiles/RISCV_TLM.dir/src/extension_base.cpp.o" "gcc" "CMakeFiles/RISCV_TLM.dir/src/extension_base.cpp.o.d"
   )
 

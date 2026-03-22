@@ -15,7 +15,7 @@ namespace riscv_tlm {
     BusCtrl::BusCtrl(sc_core::sc_module_name const &name) :
             sc_module(name), cpu_instr_socket("cpu_instr_socket"), cpu_data_socket(
             "cpu_data_socket"), memory_socket("memory_socket"), trace_socket(
-            "trace_socket") {
+            "trace_socket"), uart_socket("uart_socket") {
         cpu_instr_socket.register_b_transport(this, &BusCtrl::b_transport);
         cpu_data_socket.register_b_transport(this, &BusCtrl::b_transport);
 
@@ -46,6 +46,9 @@ namespace riscv_tlm {
             case TRACE_MEMORY_ADDRESS / 4:
                 trace_socket->b_transport(trans, delay);
                 break;
+			case UART_MEMORY_ADDRESS /4:
+				uart_socket->b_transport(trans, delay);
+				break;
                 [[likely]] default:
                 memory_socket->b_transport(trans, delay);
                 break;
