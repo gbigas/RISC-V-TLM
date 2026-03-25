@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/Dylan/ACA_Project/RISC-V-TLM/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

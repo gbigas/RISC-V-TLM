@@ -128,7 +128,6 @@ namespace riscv_tlm::peripherals {
 				uint8_t ch = val & 0xFF;
        			 std::cout << "TX CHAR: '" << ch << "' (0x" << std::hex << (int)ch << ")" << std::dec << std::endl;
 				if (ptSlave != -1) {
-					write(ptSlave, &ch, 1);
 					ssize_t bytes = write(ptSlave, &ch, 1);
             		std::cout << "Wrote " << bytes << " bytes to ptSlave=" << ptSlave << std::endl;
 
