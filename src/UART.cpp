@@ -25,6 +25,7 @@ namespace riscv_tlm::peripherals {
             arg = new char[2 + strlen(slaveBase) + 1 + 20 + 1];
             sprintf(arg, "-S%s/%d", slaveBase, ptMaster);
         }
+		printf("xtermLaunch: built arg='%s'\n", arg);
 
         char *argv[3];
         argv[0] = (char *) ("xterm");
@@ -66,11 +67,12 @@ namespace riscv_tlm::peripherals {
             struct termios termInfo{};
             tcgetattr(ptSlave, &termInfo);
 
-            termInfo.c_lflag &= ~ECHO;
+            termInfo.c_lflag &= ECHO;
             termInfo.c_lflag &= ~ICANON;
             tcsetattr(ptSlave, TCSADRAIN, &termInfo);
 
             xtermPid = fork();
+			printf("UART %s: ptMaster=%d, ptSlave=%s\n",name(), ptMaster, ptSlaveName);
 
             if (xtermPid == 0) {
                 xtermLaunch(ptSlaveName);
@@ -85,6 +87,7 @@ namespace riscv_tlm::peripherals {
 
 		socket.register_b_transport(this, &UART::b_transport);
 
+		SC_THREAD(uart_rx_process); 
 		xtermSetup();
 	}
 
@@ -112,11 +115,11 @@ namespace riscv_tlm::peripherals {
 		}
 
 		if (cmd == tlm::TLM_READ_COMMAND) {
-
+			
 			regs[FR] = 0;
 			if (tx_empty) regs[FR] |= (1 << 5);  //TXFE
-			if (rx_ready) regs[FR] &= ~(1 << 4); //RXFE
-												 //
+			if (!rx_ready) regs[FR] |= (1 << 4);  //RXFE
+													 //
 			*(uint32_t*)ptr = regs[reg_idx];
 			if (addr == DR * 4 && rx_ready) {
 				rx_ready = false;
@@ -147,25 +150,35 @@ void UART::uart_rx_process() {
         fd_set readfds;
         struct timeval tv;
         
-        while (true) {
-            if (ptMaster != -1) {
-                FD_ZERO(&readfds);
-                FD_SET(ptMaster, &readfds);
-                tv.tv_sec = 0; tv.tv_usec = 1000;  // 1ms poll
-                
-                if (select(ptMaster + 1, &readfds, nullptr, nullptr, &tv) > 0) {
-                    if (FD_ISSET(ptMaster, &readfds)) {
-                        uint8_t ch;
-                        ssize_t bytes = read(ptMaster, &ch, 1);
-                        if (bytes > 0) {
-                            rx_data = ch;
-                            rx_ready = true;
-                            //printf("[%s] UART RX: '%c' (0x%02x)\n", sc_core::sc_time_stamp().to_string(), ch, ch);
-                        }
-                    }
+       while (true) {
+    if (ptMaster != -1) {
+
+        FD_ZERO(&readfds);
+        FD_SET(ptMaster, &readfds);
+        tv.tv_sec  = 0;
+        tv.tv_usec = 0;  // 1 ms
+
+        int r = select(ptMaster + 1, &readfds, nullptr, nullptr, &tv);
+        if (r == -1) {
+            perror("UART RX: select failed");
+        } else if (r == 0) {
+            // timeout; normal, no input
+        } else {
+            printf("UART RX: select returned %d, FD_ISSET=%d\n",
+                   r, FD_ISSET(ptMaster, &readfds));
+            if (FD_ISSET(ptMaster, &readfds)) {
+                uint8_t ch;
+                ssize_t bytes = read(ptMaster, &ch, 1);
+                if (bytes > 0) {
+                    rx_data = ch;
+                    rx_ready = true;
+                    printf("UART RX: char='\\x%02x' (%c)\n", ch, isprint(ch) ? ch : '?');
+                    SC_REPORT_INFO("UART", "RX data ready");
                 }
             }
-            wait(1, sc_core::SC_MS);
         }
     }
+    wait(sc_core::SC_ZERO_TIME);
+}
+}
 };
