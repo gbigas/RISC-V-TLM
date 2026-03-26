@@ -102,7 +102,7 @@ namespace riscv_tlm::peripherals {
 		unsigned int len = trans.get_data_length();
 		tlm::tlm_command cmd = trans.get_command();
 
-		 std::cout << "UART access: addr=0x" << std::hex << addr << " local=0x" << addr << std::dec << std::endl;
+		std::cout << "UART access: addr=0x" << std::hex << addr << " local=0x" << addr << std::dec << std::endl;
 		if (len != 4) {
 			trans.set_response_status(tlm::TLM_ADDRESS_ERROR_RESPONSE);
 			return;
@@ -156,7 +156,7 @@ void UART::uart_rx_process() {
         FD_ZERO(&readfds);
         FD_SET(ptMaster, &readfds);
         tv.tv_sec  = 0;
-        tv.tv_usec = 0;  // 1 ms
+        tv.tv_usec = 0;
 
         int r = select(ptMaster + 1, &readfds, nullptr, nullptr, &tv);
         if (r == -1) {
